@@ -12,4 +12,3 @@ from radiomics_custom_example import app
 
 # Vercel Python运行时需要导出app对象
 # 这是Vercel识别的标准格式
-
