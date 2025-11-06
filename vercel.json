@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    }
-  ],
   "routes": [
     {
       "src": "/health",
@@ -20,13 +14,10 @@
       "dest": "/api/index.py"
     }
   ],
-  "env": {
-    "PYTHON_VERSION": "3.11"
-  },
   "functions": {
     "api/index.py": {
+      "runtime": "python3.11",
       "maxDuration": 300
     }
   }
 }
-
