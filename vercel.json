@@ -3,19 +3,19 @@
   "routes": [
     {
       "src": "/health",
-      "dest": "/api/index.py"
+      "dest": "/api/index"
     },
     {
       "src": "/api/radiomics",
-      "dest": "/api/index.py"
+      "dest": "/api/index"
     },
     {
       "src": "/(.*)",
-      "dest": "/api/index.py"
+      "dest": "/api/index"
     }
   ],
   "functions": {
-    "api/index.py": {
+    "api/**/*.py": {
       "maxDuration": 300
     }
   }
